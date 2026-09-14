@@ -1,0 +1,113 @@
+<!-- 作品集卡片區域 -->
+<div class="portfolio-grid">
+  
+  <!-- 新增：數位科技概論卡片 -->
+  <div class="card">
+    <div class="card-header">
+      <span class="tag">必修課程</span>
+      <h3>數位科技概論</h3>
+    </div>
+    <div class="card-body">
+      <p>涵蓋網頁開發基礎、CSS 版型設計與 GitHub 版本控制實務。</p>
+      <ul class="skills-list">
+        <li>HTML / CSS</li>
+        <li>RWD 響應式設計</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <a href="#" class="btn">查看講義與專案 →</a>
+    </div>
+  </div>
+
+  <!-- 你原本的其他作業卡片可以依此格式複製延伸 -->
+
+</div>
+
+<style>
+  /* 基礎版面與易讀性優化 */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+
+  /* 卡片本體 */
+  .card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  /* 標籤與標題 */
+  .tag {
+    display: inline-block;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+
+  .card-header h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.35rem;
+    color: #1f2937;
+    line-height: 1.4;
+  }
+
+  /* 內文與技能清單 */
+  .card-body p {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .skills-list li {
+    background-color: #f3f4f6;
+    color: #374151;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+  }
+
+  /* 按鈕 */
+  .btn {
+    display: inline-block;
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+
+  .btn:hover {
+    text-decoration: underline;
+  }
+</style>
