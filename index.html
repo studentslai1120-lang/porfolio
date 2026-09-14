@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -15,7 +16,46 @@
         h2 { color: #3498db; font-size: 1.5rem; margin-bottom: 15px; border-left: 4px solid #3498db; padding-left: 10px; }
         ul { list-style-type: square; padding-left: 20px; }
         li { margin-bottom: 8px; }
-        .project-card { background: #fafafa; border: 1px solid #ddd; padding: 15px; border-radius: 5px; margin-bottom: 15px; }
+        
+        /* 提升易讀性的作品卡片樣式 */
+        .project-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .project-card { 
+            background: #ffffff; 
+            border: 1px solid #e2e8f0; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .tag {
+            display: inline-block;
+            background-color: #e0f2fe;
+            color: #0369a1;
+            font-size: 0.8rem;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 12px;
+            margin-bottom: 6px;
+        }
+        .project-card h3 {
+            color: #2c3e50;
+            font-size: 1.25rem;
+            margin-bottom: 8px;
+        }
+        .project-card p {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
         footer { text-align: center; color: #aaa; font-size: 0.9rem; margin-top: 20px; }
     </style>
 </head>
@@ -42,13 +82,25 @@
 
         <section>
             <h2>作品展示 (Projects)</h2>
-            <div class="project-card">
-                <h3>個人作品集網站 (Portfolio Website)</h3>
-                <p>使用 HTML5 / CSS3 建構的響應式個人網站，部署於 GitHub Pages。</p>
-            </div>
-            <div class="project-card">
-                <h3>大一程式設計期末專案 (建置中)</h3>
-                <p>預計於本學期完成的實作專案，規劃中...</p>
+            <div class="project-grid">
+                <!-- 新增：數位科技概論卡片 -->
+                <div class="project-card">
+                    <span class="tag">課程實作</span>
+                    <h3>數位科技概論</h3>
+                    <p>學習 HTML/CSS 視覺排版與 GitHub 版本控制，紀錄從零到一建立個人網站與基礎專案的課程歷程。</p>
+                </div>
+
+                <div class="project-card">
+                    <span class="tag">網頁開發</span>
+                    <h3>個人作品集網站 (Portfolio Website)</h3>
+                    <p>使用 HTML5 / CSS3 建構的響應式個人網站，部署於 GitHub Pages。</p>
+                </div>
+
+                <div class="project-card">
+                    <span class="tag">實作中</span>
+                    <h3>大一程式設計期末專案</h3>
+                    <p>預計於本學期完成的實作專案，規劃中...</p>
+                </div>
             </div>
         </section>
 
