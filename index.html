@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
@@ -46,53 +45,34 @@
             margin-bottom: 6px;
         }
         .project-card h3 {
-            color: #2c3e50;
             font-size: 1.25rem;
             margin-bottom: 8px;
+        }
+        .project-card h3 a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .project-card h3 a:hover {
+            color: #3498db;
+            text-decoration: underline;
         }
         .project-card p {
             color: #555;
             font-size: 0.95rem;
             line-height: 1.5;
         }
-
-        /* 可點擊展開的細項樣式 (Accordion / Details) */
-        .project-card details {
-            margin-top: 12px;
-            padding-top: 10px;
-            border-top: 1px dashed #e2e8f0;
-        }
-        .project-card summary {
-            font-weight: bold;
-            color: #3498db;
-            cursor: pointer;
-            outline: none;
-            padding: 4px 0;
-            user-select: none;
-        }
-        .project-card summary:hover {
-            color: #2980b9;
-        }
-        .details-content {
+        .btn-link {
+            display: inline-block;
             margin-top: 10px;
-            background-color: #f8fafc;
-            padding: 12px 16px;
-            border-radius: 6px;
-            font-size: 0.9rem;
+            padding: 6px 12px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
         }
-        .details-content h4 {
-            color: #2c3e50;
-            margin: 8px 0 4px 0;
-            font-size: 0.95rem;
-        }
-        .details-content ul {
-            list-style-type: disc;
-            padding-left: 20px;
-            margin-bottom: 8px;
-        }
-        .details-content li {
-            margin-bottom: 4px;
-            color: #475569;
+        .btn-link:hover {
+            background-color: #2980b9;
         }
         
         footer { text-align: center; color: #aaa; font-size: 0.9rem; margin-top: 20px; }
@@ -122,39 +102,12 @@
         <section>
             <h2>作品展示 (Projects)</h2>
             <div class="project-grid">
-
-                <!-- 新增：數位科技概論卡片（含點擊展開細項） -->
+                <!-- 已加入連至 index1.html 的連結 -->
                 <div class="project-card">
                     <span class="tag">課程實作</span>
-                    <h3>數位科技概論</h3>
+                    <h3><a href="index1.html">水與生活：小小科學探索日</a></h3>
                     <p>學習 HTML/CSS 視覺排版與 GitHub 版本控制，紀錄從零到一建立個人網站與基礎專案的課程歷程。</p>
-                    
-                    <details>
-                        <summary>點擊查看課程學習細項與實作內容 ▾</summary>
-                        <div class="details-content">
-                            <h4>HTML/CSS 基礎與結構（活動 01-04）</h4>
-                            <ul>
-                                <li><strong>文字層級與結構：</strong>使用 <code>h1</code>-<code>h3</code>、<code>p</code> 語意化標籤，以及 <code>sub</code>/<code>sup</code> 標記化學式與單位。</li>
-                                <li><strong>多媒體整合：</strong>實作 <code>img</code> (JPG/PNG/SVG)、<code>audio</code> 與 <code>video</code> 影音元件控制與控制列設定。</li>
-                                <li><strong>清單與表格：</strong>靈活運用 <code>ul</code>、<code>ol</code> 與 <code>table</code> 進行學習計畫與任務分工整理。</li>
-                                <li><strong>互動表單：</strong>設計包含 <code>input</code>、<code>select</code>、<code>radio</code>/<code>checkbox</code> 與 <code>textarea</code> 的使用者體驗表單。</li>
-                            </ul>
-
-                            <h4>CSS 樣式排版與視覺設計（活動 05-08）</h4>
-                            <ul>
-                                <li><strong>視覺風格與配色：</strong>練習 CSS 色彩屬性設定、陰影與圓角控制。</li>
-                                <li><strong>整頁網頁版型：</strong>運用 CSS Grid 與 Flexbox 實現單欄、多欄與側欄排版佈局。</li>
-                                <li><strong>卡片排列與物件裁切：</strong>控制卡片間距、統一封面高度並運用 <code>object-fit</code> 處理圖片縮放[cite: 4]。</li>
-                                <li><strong>響應式網頁 (RWD)：</strong>使用 Media Queries 針對不同螢幕尺寸（電腦/手機）進行單雙欄彈性切換[cite: 4]。</li>
-                            </ul>
-
-                            <h4>無障礙網頁與優化（活動 09）</h4>
-                            <ul>
-                                <li><strong>無障礙優化：</strong>使用 WAVE 工具檢測，提升色彩對比度並建立正確的 <code>label</code> 與 <code>for</code>/<code>id</code> 欄位關聯性[cite: 4]。</li>
-                                <li><strong>鍵盤可達性：</strong>優化焦點樣式 (<code>:focus-visible</code>) 與文字可讀性放大檢查[cite: 4]。</li>
-                            </ul>
-                        </div>
-                    </details>
+                    <a href="index1.html" class="btn-link">查看作品頁面 →</a>
                 </div>
 
                 <div class="project-card">
