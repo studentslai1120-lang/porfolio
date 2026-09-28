@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>放學後社團體驗表</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      color: #333;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 6px;
+    }
+    p {
+      margin-bottom: 12px;
+    }
+    input[type="text"], select, textarea {
+      width: 100%;
+      max-width: 400px;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background-color: #cccccc;
+      border: none;
+      border-radius: 4px;
+      cursor: not-allowed;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #3498db;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-link">← 返回作品集首頁</a>
+
+  <h1>放學後社團體驗表</h1>
+  <p>這是介面練習，資料不會送出或保存，不能當成正式報名。</p>
+
+  <form>
+    <p>
+      <label for="nickname"><strong>我的暱稱</strong></label><br>
+      <input id="nickname" name="nickname" type="text" placeholder="提示：例如小星星">
+    </p>
+
+    <p>
+      <label for="club"><strong>想體驗的社團</strong></label><br>
+      <select id="club" name="club">
+        <option value="">請選擇社團</option>
+        <option value="theater">故事劇場</option>
+        <option value="craft">科學手作</option>
+        <option value="boardgame">桌遊挑戰</option>
+      </select>
+    </p>
+
+    <fieldset>
+      <legend>方便參加的日子（單選）</legend>
+      <p><label><input type="radio" name="day" value="tuesday"> 星期二</label></p>
+      <p><label><input type="radio" name="day" value="thursday"> 星期四</label></p>
+      <p><label><input type="radio" name="day" value="friday"> 星期五</label></p>
+    </fieldset>
+
+    <fieldset>
+      <legend>我期待的活動方式（可複選）</legend>
+      <p><label><input type="checkbox" name="expectation" value="hands-on"> 動手製作</label></p>
+      <p><label><input type="checkbox" name="expectation" value="cooperation"> 和同學合作</label></p>
+      <p><label><input type="checkbox" name="expectation" value="sharing"> 上台分享</label></p>
+    </fieldset>
+
+    <p>
+      <label for="message"><strong>想告訴老師的事</strong></label><br>
+      <textarea id="message" name="message" rows="4" placeholder="提示：例如我想和同學一起完成一個小作品"></textarea>
+    </p>
+
+    <p>
+      <button type="button" disabled>練習版，尚未開放報名</button>
+    </p>
+  </form>
+
+</body>
+</html>
